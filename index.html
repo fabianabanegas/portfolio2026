@@ -4,204 +4,420 @@
   <meta charset="UTF-8">
   <title>Fabiana Banegas – Portfolio</title>
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Fabiana Banegas is a digital designer and content strategist based in Dublin, blending UX/UI design, brand identity, and front-end development.">
+
+  <meta property="og:title" content="Fabiana Banegas – Portfolio">
+  <meta property="og:description" content="Digital designer and content strategist based in Dublin. UX/UI design, brand identity, web design.">
+  <meta property="og:image" content="images/fabiana-profile4.png">
+  <meta property="og:type" content="website">
+
+  <link rel="icon" href="images/favicon.ico">
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@600;700&family=Montserrat:wght@400;500;600;700;800;900&display=swap" rel="stylesheet">
 
   <link rel="stylesheet" href="style.css">
 
-  <!-- GSAP + ScrollMagic -->
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script>
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/ScrollMagic/2.0.8/ScrollMagic.min.js"></script>
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/ScrollMagic/2.0.8/plugins/animation.gsap.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js" onerror="document.documentElement.classList.add('no-js-fallback')"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/ScrollTrigger.min.js" onerror="document.documentElement.classList.add('no-js-fallback')"></script>
 </head>
 
 <body>
+
+  <a href="#top-content" class="skip-link">Skip to content</a>
 
   <!-- NAV -->
   <header class="top-nav">
     <div class="nav-left">
       <a href="index.html" class="nav-logo">FABIANA BANEGAS</a>
     </div>
-    <nav class="nav-right">
-      <a href="#projects">Featured work</a>
-      <a href="index.html">About</a>
+    <button class="nav-toggle" aria-label="Toggle navigation menu" aria-expanded="false" aria-controls="primary-nav">
+      <span></span><span></span><span></span>
+    </button>
+    <nav class="nav-right" id="primary-nav" aria-label="Main navigation">
+      <a href="#featured">Featured work</a>
+      <a href="#skills">Skills</a>
       <a href="#contact">Contact</a>
-        <a href="more-projects.html" class="nav-cta">Explore other areas →</a>
+      <a href="more-projects.html" class="nav-cta">Explore other projects →</a>
     </nav>
   </header>
 
-<!-- HERO -->
-<section class="panel hero" id="top">
-  <div class="hero-container">
-    <!-- Left side image -->
-    <div class="hero-image">
-      <img src="images/fabiana-profile4.png" alt="Fabiana profile" class="profile-img">
+  <!-- HERO: its own full-height section, just the photo and text -->
+  <section class="hero-section" id="top">
+    <div class="hero-inner reveal" id="top-content">
+      <img src="images/fabiana-profile4-1.jpg" alt="Portrait of Fabiana Banegas" class="hero-photo-lg">
+      <div>
+        <p class="hero-eyebrow">Portfolio 2026</p>
+        <h1 class="hero-name">Fabiana Banegas</h1>
+        <p class="hero-role">Digital designer &amp; content strategist</p>
+        <p class="hero-desc">I bring ideas to life through marketing, storytelling, and digital media production...</p>
+        <p class="hero-tagline">from concept to execution !</p>
+      </div>
     </div>
-    
-    <!-- Right side content -->
-    <div class="hero-inner">
-      <p class="hero-kicker">Creative Portfolio · 2026</p> <b>
-      <h1>Hi, I'm <strong>Fabiana</strong>!</h1>
-      <p class="hero-subtitle">
-        My journey began in marketing and branding, where I discovered a passion for customer service, this synergy plus my curiosity for interactive media led me to <strong>Product design</strong> and <strong>UX research.</strong>
-      </p>
-      <p class="hero-subtitle">
-        I focus my work and design systems on human-first solutions: genuine client <strong>empathy</strong>, resonant <strong>storytelling</strong>, and strong <strong>brand consistency.</strong>
-      </p>
-      <br> <p class="hero-kicker">
-        <strong>Explore below </strong>
-      </p>
+  </section>
+
+  <!-- CAROUSEL: its own full-width section, infinite loop, click a folder to open its page -->
+  <section class="carousel-section" id="explore">
+    <div class="ticker-viewport" aria-hidden="true">
+      <div class="ticker-track">
+        <span>CLICK TO DISCOVER&nbsp;•&nbsp;CLICK TO DISCOVER&nbsp;•&nbsp;CLICK TO DISCOVER&nbsp;•&nbsp;CLICK TO DISCOVER&nbsp;•&nbsp;CLICK TO DISCOVER&nbsp;•&nbsp;CLICK TO DISCOVER&nbsp;•&nbsp;CLICK TO DISCOVER&nbsp;•&nbsp;CLICK TO DISCOVER&nbsp;•&nbsp;CLICK TO DISCOVER&nbsp;•&nbsp;CLICK TO DISCOVER&nbsp;•&nbsp;CLICK TO DISCOVER&nbsp;•&nbsp;CLICK TO DISCOVER&nbsp;•&nbsp;CLICK TO DISCOVER&nbsp;•&nbsp;CLICK TO DISCOVER&nbsp;•&nbsp;</span>
+        <span>CLICK TO DISCOVER&nbsp;•&nbsp;CLICK TO DISCOVER&nbsp;•&nbsp;CLICK TO DISCOVER&nbsp;•&nbsp;CLICK TO DISCOVER&nbsp;•&nbsp;CLICK TO DISCOVER&nbsp;•&nbsp;CLICK TO DISCOVER&nbsp;•&nbsp;CLICK TO DISCOVER&nbsp;•&nbsp;CLICK TO DISCOVER&nbsp;•&nbsp;CLICK TO DISCOVER&nbsp;•&nbsp;CLICK TO DISCOVER&nbsp;•&nbsp;CLICK TO DISCOVER&nbsp;•&nbsp;CLICK TO DISCOVER&nbsp;•&nbsp;CLICK TO DISCOVER&nbsp;•&nbsp;CLICK TO DISCOVER&nbsp;•&nbsp;</span>
+      </div>
     </div>
-  </div>
-</section>
+    <div class="carousel-viewport">
+      <div class="carousel-track" role="list" aria-label="Project categories">
+        <a class="folder-card" href="mygriff.html">
+          <svg class="category-icon" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg" aria-hidden="true"><path d="M4,3 L4,17.5 L7.8,14.1 L10.2,19.8 L12.9,18.6 L10.4,13 L15.5,13 Z"/></svg>
+          <span>UX/UI</span>
+        </a>
+        <a class="folder-card" href="#featured">
+          <svg class="category-icon" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg" aria-hidden="true"><rect x="2" y="3" width="20" height="13" rx="1.5"/><rect x="10" y="17" width="4" height="2.5"/><rect x="7" y="20" width="10" height="1.8" rx="0.9"/></svg>
+          <span>Web design</span>
+        </a>
+        <a class="folder-card" href="more-projects.html#posters">
+          <svg class="category-icon" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg" aria-hidden="true"><rect x="7" y="2" width="13" height="17" rx="1.5"/><rect x="3.5" y="5.5" width="13" height="17" rx="1.5" stroke="#FFFFFF" stroke-width="1.2"/></svg>
+          <span>Posters</span>
+        </a>
+        <a class="folder-card" href="more-projects.html#branding">
+          <svg class="category-icon" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg" aria-hidden="true"><path fill-rule="evenodd" clip-rule="evenodd" d="M3,4 L13,4 L21,12 L13,20 L3,20 Z M8.6,8 A1.6,1.6 0 1,0 5.4,8 A1.6,1.6 0 1,0 8.6,8 Z"/></svg>
+          <span>Branding</span>
+        </a>
+        <a class="folder-card" href="more-projects.html#videoproduction">
+          <svg class="category-icon" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg" aria-hidden="true"><path fill-rule="evenodd" clip-rule="evenodd" d="M4,6 L20,6 A2,2 0 0 1 22,8 L22,16 A2,2 0 0 1 20,18 L4,18 A2,2 0 0 1 2,16 L2,8 A2,2 0 0 1 4,6 Z M9.5,9.5 L9.5,14.5 L15,12 Z"/></svg>
+          <span>Video</span>
+        </a>
+        <a class="folder-card" href="more-projects.html#podcast">
+          <svg class="category-icon" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg" aria-hidden="true"><rect x="9" y="2" width="6" height="11" rx="3"/><rect x="11" y="13" width="2" height="6"/><rect x="7" y="19" width="10" height="1.8" rx="0.9"/></svg>
+          <span>Podcast</span>
+        </a>
+        <a class="folder-card" href="more-projects.html#marketing">
+          <svg class="category-icon" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg" aria-hidden="true"><rect x="2" y="9" width="3" height="8" rx="1"/><polygon points="5,9 20,4 20,22 5,17"/></svg>
+          <span>Marketing</span>
+        </a>
 
-<!-- PROJECT 1 – MyGriff -->
-<section class="panel project project-ux" id="projects">
-  <div class="project-grid reverse">
+        <div aria-hidden="true" style="display: contents;">
+        <a class="folder-card" href="mygriff.html" tabindex="-1">
+          <svg class="category-icon" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg" aria-hidden="true"><path d="M4,3 L4,17.5 L7.8,14.1 L10.2,19.8 L12.9,18.6 L10.4,13 L15.5,13 Z"/></svg>
+          <span>UX/UI</span>
+        </a>
+        <a class="folder-card" href="#featured" tabindex="-1">
+          <svg class="category-icon" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg" aria-hidden="true"><rect x="2" y="3" width="20" height="13" rx="1.5"/><rect x="10" y="17" width="4" height="2.5"/><rect x="7" y="20" width="10" height="1.8" rx="0.9"/></svg>
+          <span>Web design</span>
+        </a>
+        <a class="folder-card" href=""more-projects.html#posters"" tabindex="-1">
+          <svg class="category-icon" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg" aria-hidden="true"><rect x="7" y="2" width="13" height="17" rx="1.5"/><rect x="3.5" y="5.5" width="13" height="17" rx="1.5" stroke="#FFFFFF" stroke-width="1.2"/></svg>
+          <span>Posters</span>
+        </a>
+        <a class="folder-card" href="more-projects.html#branding" tabindex="-1">
+          <svg class="category-icon" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg" aria-hidden="true"><path fill-rule="evenodd" clip-rule="evenodd" d="M3,4 L13,4 L21,12 L13,20 L3,20 Z M8.6,8 A1.6,1.6 0 1,0 5.4,8 A1.6,1.6 0 1,0 8.6,8 Z"/></svg>
+          <span>Branding</span>
+        </a>
+        <a class="folder-card" href="more-projects.html#videoproduction" tabindex="-1">
+          <svg class="category-icon" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg" aria-hidden="true"><path fill-rule="evenodd" clip-rule="evenodd" d="M4,6 L20,6 A2,2 0 0 1 22,8 L22,16 A2,2 0 0 1 20,18 L4,18 A2,2 0 0 1 2,16 L2,8 A2,2 0 0 1 4,6 Z M9.5,9.5 L9.5,14.5 L15,12 Z"/></svg>
+          <span>Video</span>
+        </a>
+        <a class="folder-card" href="more-projects.html#podcast" tabindex="-1">
+          <svg class="category-icon" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg" aria-hidden="true"><rect x="9" y="2" width="6" height="11" rx="3"/><rect x="11" y="13" width="2" height="6"/><rect x="7" y="19" width="10" height="1.8" rx="0.9"/></svg>
+          <span>Podcast</span>
+        </a>
+        <a class="folder-card" href="more-projects.html#marketing" tabindex="-1">
+          <svg class="category-icon" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg" aria-hidden="true"><rect x="2" y="9" width="3" height="8" rx="1"/><polygon points="5,9 20,4 20,22 5,17"/></svg>
+          <span>Marketing</span>
+        </a>
 
-    <div class="project-media">
-      <img src="images/mygriff1.png" alt="MyGriff dashboard" class="project-image">
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- FEATURED PROJECTS -->
+  <section class="folder-section" id="featured">
+    <div class="section-heading-row">
+      <div>
+        <p class="file-label">
+          <svg class="folder-icon" viewBox="0 0 100 74" xmlns="http://www.w3.org/2000/svg" aria-hidden="true"><path d="M6 14C6 9.58 9.58 6 14 6H34L42 14H86C90.42 14 94 17.58 94 22V60C94 64.42 90.42 68 86 68H14C9.58 68 6 64.42 6 60V14Z"/></svg>
+          UX/UI - Web design
+        </p>
+        <h2 class="section-title">Featured Projects</h2>
+      </div>
+       </div>
+
+    <div class="featured-list">
+      <article class="featured-row reveal">
+        <div class="featured-visual">
+          <img src="images/eirelore1.png" alt="Éire Lore homepage hero" class="featured-cover" loading="lazy">
+          <div class="featured-highlights">
+            <img src="images/eirelore-logo.png" alt="Éire Lore highlight: myth story page" class="featured-highlight-img" loading="lazy">
+            <img src="images/eirelore4.png" alt="Éire Lore highlight: store page" class="featured-highlight-img" loading="lazy">
+            <img src="images/eirelore-stack.png" alt="Éire Lore highlight: 3D printed figure product" class="featured-highlight-img" loading="lazy">
+          </div>
+        </div>
+        <div class="featured-content">
+          <span class="tag-pill tag-amethyst">Web · Project management · UX Research</span>
+          <h3 class="project-title">Éire Lore</h3>
+          <p class="project-desc">A storytelling platform bringing Irish mythology to life through interactive legends, a glossary, and a collectible merch store.</p>
+          <div class="featured-links">
+            <a href="eirelore.html" class="project-cta">Case study →</a>
+            <a href="https://eirelore.com" target="_blank" rel="noreferrer" class="project-cta outline">Visit site →</a>
+          </div>
+        </div>
+      </article>
+
+      <article class="featured-row featured-row-reverse reveal">
+        <div class="featured-visual">
+          <img src="images/mygriff1.png" alt="MyGriff student dashboard interface" class="featured-cover" loading="lazy">
+          <div class="featured-highlights">
+            <img src="images/mygriff-rewards.png" alt="MyGriff highlight: screen detail 1" class="featured-highlight-img" loading="lazy">
+            <img src="images/mygriff-brand.png" alt="MyGriff highlight: screen detail 2" class="featured-highlight-img" loading="lazy">
+            <img src="images/mygriff-wellness.png" alt="MyGriff highlight: screen detail 3" class="featured-highlight-img" loading="lazy">
+          </div>
+        </div>
+        <div class="featured-content">
+          <span class="tag-pill tag-amethyst">UX/UI · Learning platform</span>
+          <h3 class="project-title">MyGriff</h3>
+          <p class="project-desc">Redesigned Griffith College's platform into a unified Virtual Learning Environment with gamification and wellness integration.</p>
+          <div class="featured-links">
+            <a href="mygriff.html" class="project-cta">Case study →</a>
+            <a href="https://www.figma.com/proto/1njcJZNDhQxWBoXsY2BJaj/Interactive-Design-Project--Copy-?node-id=241-3222&t=wSFR3gdE6tpkI9Un-1&starting-point-node-id=241%3A3222" target="_blank" rel="noreferrer" class="project-cta outline">Try prototype →</a>
+          </div>
+        </div>
+      </article>
+
+      <article class="featured-row reveal">
+        <div class="featured-visual">
+          <img src="images/cholitas-site.png" alt="Cholitas Escaladoras website homepage" class="featured-cover" loading="lazy">
+          <div class="featured-highlights">
+            <img src="images/cholitas1.png" alt="Cholitas Escaladoras highlight 1" class="featured-highlight-img" loading="lazy">
+            <img src="images/cholitas3.png" alt="Cholitas Escaladoras highlight 2" class="featured-highlight-img" loading="lazy">
+            <img src="images/cholitas2.png" alt="Cholitas Escaladoras highlight 3" class="featured-highlight-img" loading="lazy">
+          </div>
+        </div>
+        <div class="featured-content">
+          <span class="tag-pill tag-green">Web · Storytelling &amp; culture</span>
+          <h3 class="project-title">Cultural pride at the top of the world</h3>
+          <p class="project-desc">A hero website celebrating Bolivia's Cholita Climbers, Indigenous Aymara women who summit Andean giants in their traditional polleras and bowler hats.</p>
+          <div class="featured-links">
+            <a href="https://cholitasclimbers.netlify.app/" target="_blank" rel="noreferrer" class="project-cta">Visit site →</a>
+          </div>
+        </div>
+      </article>
     </div>
 
-    <div class="content">
-      <p class="project-label">UX/UI · Learning platform</p>
-      <h2><strong>MyGriff</strong> </h2>
-      <h3> Student Learning & Productivity App</h3>
-      <p class="project-subtitle">
-        Redesigned Griffith College's current platform into MyGriff, a unified Virtual Learning Environment addressing key student pain points identified through surveys, interviews, and competitive analysis.
-      </p>
-        <p class="project-subtitle">A goal-directed design project, gamification and wellness integration.</p> 
-      <div class="project-link">
-        <a href="mygriff.html" class="link-detail">Full case study</a>
+    <div class="featured-more">
+      <a href="more-projects.html" class="project-cta outline">Explore more projects →</a>
+    </div>
+  </section>
+
+  <!-- SKILLS (replaces About) -->
+  <section class="folder-section skills-section" id="skills">
+    <div class="section-heading-row">
+      <div>
+        <p class="file-label">stack</p>
+        <h2 class="section-title">Skills and Tools</h2>
       </div>
     </div>
 
-  </div>
-</section>
-
-<!-- PROJECT 2 – Cholitas Escaladoras Site (ACTUALIZADO) -->
-<section class="panel project project-cholitas">
-  <div class="project-grid">
-  <div class="content">
-    <p class="project-label">Web · Storytelling & culture</p>
-    <h2> <strong> Cultural pride </strong> <br>at the top of the World</h2>
-    <p class="project-subtitle">
-     A hero website celebrating Bolivia's Cholita Climbers, a group of Indigenous Aymara women who summit Andean giants like Huayna Potosí, Illimani, and Aconcagua in their traditional atires, polleras and bowler hats.
-   </p>
-        <p class="project-subtitle">A project about visibility, strength, and identity.</p> 
- 
-    <p class="project-link">
-      <a href="https://cholitasclimbers.netlify.app/" target="_blank" rel="noreferrer">Visit site</a>
-    </p>
-  </div>
-      <div class="project-media">
-      <img src="images/cholitas-site.png" alt="Cholitas Escaladoras" class="project-image">
-      </a>
-    </div>
-
-  </div>
-</section>
-
-</section>
-
-<!-- PROJECT 3 – Cami laye -->
-<section class="panel project project-cholitas">
-  <div class="project-grid">
-  <div class="content">
-    <p class="project-label">Web · Artist site</p>
-    <h2> <strong> Cami Layé Okún </strong> </h2>
-    <p class="project-subtitle">
-     CUBAN DJ, VYNIL SELECTOR & RADIO HOST
-   </p>
-        <p class="project-subtitle">A hero portfolio website built with Astro framework on Netlify, delivering lightning-fast performance with zero JavaScript by default and seamless partial hydration for interactive elements.</p> 
- 
-    <p class="project-link">
-      <a href="https://camilayeokun.netlify.app/" target="_blank" rel="noreferrer">Visit site</a>
-    </p>
-  </div>
-      <div class="project-media">
-      <img src="images/camilaye-site.png" alt="Cholitas Escaladoras" class="project-image">
-      </a>
-    </div>
-
-  </div>
-</section>
-
-<!-- PROJECT 4 – vicom -->
-<section class="panel project project-vicom">
-  <div class="project-grid">
-  <div class="content">
-    <p class="project-label">Visual communication · Posters</p>
-    <h2> Concept ideation </h2>
-    <p class="project-subtitle">
-    Two visual communication projects developed from concept ideation to final poster outcome, each translating atmosphere, narrative and audience into a clear visual language.</p>
-
-
-  </div>
-              <div class="case-grid">
-
-      <!-- CASE 1 -->
-      <article class="case-card">
-        <img src="images/music-poster.png" alt="Music event poster concept" class="case-image">
-        <div class="case-text">
-          <h3>Music event poster</h3>
-          <p>
-           A project using typography, hierarchy and colour systems to express the vibrancy of Latin Jazz genre.
-          </p>
-                      <p class="project-link">
-           <a href="vicom1.html">View process</a>
-          </p>
+    <div class="skills-board-scroll">
+    <div class="skills-board">
+      <div class="sticky-note">
+        <span class="sticky-tape" aria-hidden="true"></span>
+        <h3>Personal aptitudes</h3>
+        <div class="skill-tags">
+          <span class="skill-tag tag-amethyst">Critical thinking</span>
+          <span class="skill-tag tag-amethyst">Creativity</span>
+          <span class="skill-tag tag-amethyst">Innovation</span>
+          <span class="skill-tag tag-amethyst">Detail-oriented</span>
         </div>
-      </article>
-
-      <!-- CASE 2 -->
-      <article class="case-card">
-        <img src="images/film-poster.png" alt="Film poster concept" class="case-image">
-        <div class="case-text">
-          <h3>Film poster concept</h3>
-          <p>
-          A project using negative space, hierarchy and subtle colour to evoke suspense and narrative tension
-          </p>
-          <p class="project-link">
-           <a href="vicom2.html">View process</a>
-          </p>
+      </div>
+      <div class="sticky-note">
+        <span class="sticky-tape" aria-hidden="true"></span>
+        <h3>Design &amp; UX</h3>
+        <div class="skill-tags">
+          <span class="skill-tag tag-amethyst">UX/UI design</span>
+          <span class="skill-tag tag-amethyst">Wireframing</span>
+          <span class="skill-tag tag-amethyst">Prototyping</span>
+          <span class="skill-tag tag-amethyst">User research</span>
         </div>
-      </article>
-
+      </div>
+      <div class="sticky-note">
+        <span class="sticky-tape" aria-hidden="true"></span>
+        <h3>Brand &amp; visual</h3>
+        <div class="skill-tags">
+          <span class="skill-tag tag-purple">Brand identity</span>
+          <span class="skill-tag tag-purple">Typography</span>
+          <span class="skill-tag tag-purple">Colour systems</span>
+        </div>
+      </div>
+      <div class="sticky-note">
+        <span class="sticky-tape" aria-hidden="true"></span>
+        <h3>Development</h3>
+        <div class="skill-tags">
+          <span class="skill-tag tag-green">HTML &amp; CSS</span>
+          <span class="skill-tag tag-green">JavaScript</span>
+          <span class="skill-tag tag-green">Astro</span>
+          <span class="skill-tag tag-green">GSAP</span>
+        </div>
+      </div>
+      <div class="sticky-note">
+        <span class="sticky-tape" aria-hidden="true"></span>
+        <h3>Content &amp; strategy</h3>
+        <div class="skill-tags">
+          <span class="skill-tag tag-olive">Content strategy</span>
+          <span class="skill-tag tag-olive">Copywriting</span>
+          <span class="skill-tag tag-olive">Social media</span>
+        </div>
+      </div>
+    </div>
     </div>
 
-  </div>
-</section>
+    <div class="tools-viewport reveal">
+      <div class="tools-track">
+        <div class="tool-item">
+          <span class="tool-logo-frame"><img src="https://cdn.simpleicons.org/figma" alt="" class="tool-logo" loading="lazy"></span>
+          <span>Figma</span>
+        </div>
+        <div class="tool-item">
+          <span class="tool-logo-frame"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/vscode/vscode-original.svg" alt="" class="tool-logo" loading="lazy"></span>
+          <span>VS Code</span>
+        </div>
+        <div class="tool-item">
+          <span class="tool-logo-frame"><img src="https://cdn.simpleicons.org/html5" alt="" class="tool-logo" loading="lazy"></span>
+          <span>HTML</span>
+        </div>
+        <div class="tool-item">
+          <span class="tool-logo-frame"><img src="https://cdn.simpleicons.org/css" alt="" class="tool-logo" loading="lazy"></span>
+          <span>CSS</span>
+        </div>
+        <div class="tool-item">
+          <span class="tool-logo-frame"><img src="https://cdn.simpleicons.org/astro" alt="" class="tool-logo" loading="lazy"></span>
+          <span>Astro</span>
+        </div>
+        <div class="tool-item">
+          <span class="tool-logo-frame"><img src="https://cdn.simpleicons.org/greensock" alt="" class="tool-logo" loading="lazy"></span>
+          <span>GSAP</span>
+        </div>
+        <div class="tool-item">
+          <span class="tool-logo-frame"><img src="https://cdn.simpleicons.org/javascript" alt="" class="tool-logo" loading="lazy"></span>
+          <span>JavaScript</span>
+        </div>
+        <div class="tool-item">
+          <span class="tool-logo-frame"><img src="images/CapCut-logo.png" alt="" class="tool-logo" loading="lazy"></span>
+          <span>CapCut</span>
+        </div>
+        <div class="tool-item">
+          <span class="tool-logo-frame">
+            <svg class="tool-logo" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg" aria-hidden="true"><rect x="1.5" y="9" width="3" height="6" rx="1.5"/><rect x="6.5" y="5" width="3" height="14" rx="1.5"/><rect x="11.5" y="1.5" width="3" height="21" rx="1.5"/><rect x="16.5" y="5" width="3" height="14" rx="1.5"/><rect x="21" y="9" width="2.5" height="6" rx="1.25"/></svg>
+          </span>
+          <span>Riverside</span>
+        </div>
+        <div class="tool-item">
+          <span class="tool-logo-frame"><img src="images/Adobe-logo.png" alt="" class="tool-logo" loading="lazy"></span>
+          <span>Adobe Creative Suite</span>
+        </div>
+        <div class="tool-item">
+          <span class="tool-logo-frame"><img src="https://cdn.simpleicons.org/jira" alt="" class="tool-logo" loading="lazy"></span>
+          <span>Jira</span>
+        </div>
+        <div class="tool-item">
+          <span class="tool-logo-frame"><img src="https://cdn.simpleicons.org/notion" alt="" class="tool-logo" loading="lazy"></span>
+          <span>Notion</span>
+        </div>
+
+        <div aria-hidden="true" style="display: contents;">
+          <div class="tool-item">
+            <span class="tool-logo-frame"><img src="https://cdn.simpleicons.org/figma" alt="" class="tool-logo" loading="lazy"></span>
+            <span>Figma</span>
+          </div>
+          <div class="tool-item">
+            <span class="tool-logo-frame"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/vscode/vscode-original.svg" alt="" class="tool-logo" loading="lazy"></span>
+            <span>VS Code</span>
+          </div>
+          <div class="tool-item">
+            <span class="tool-logo-frame"><img src="https://cdn.simpleicons.org/html5" alt="" class="tool-logo" loading="lazy"></span>
+            <span>HTML</span>
+          </div>
+          <div class="tool-item">
+            <span class="tool-logo-frame"><img src="https://cdn.simpleicons.org/css" alt="" class="tool-logo" loading="lazy"></span>
+            <span>CSS</span>
+          </div>
+          <div class="tool-item">
+            <span class="tool-logo-frame"><img src="https://cdn.simpleicons.org/astro" alt="" class="tool-logo" loading="lazy"></span>
+            <span>Astro</span>
+          </div>
+          <div class="tool-item">
+            <span class="tool-logo-frame"><img src="https://cdn.simpleicons.org/greensock" alt="" class="tool-logo" loading="lazy"></span>
+            <span>GSAP</span>
+          </div>
+          <div class="tool-item">
+            <span class="tool-logo-frame"><img src="https://cdn.simpleicons.org/javascript" alt="" class="tool-logo" loading="lazy"></span>
+            <span>JavaScript</span>
+          </div>
+          <div class="tool-item">
+            <span class="tool-logo-frame"><img src="images/CapCut-logo.png" alt="" class="tool-logo" loading="lazy"></span>
+            <span>CapCut</span>
+          </div>
+          <div class="tool-item">
+            <span class="tool-logo-frame">
+              <svg class="tool-logo" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg" aria-hidden="true"><rect x="1.5" y="9" width="3" height="6" rx="1.5"/><rect x="6.5" y="5" width="3" height="14" rx="1.5"/><rect x="11.5" y="1.5" width="3" height="21" rx="1.5"/><rect x="16.5" y="5" width="3" height="14" rx="1.5"/><rect x="21" y="9" width="2.5" height="6" rx="1.25"/></svg>
+            </span>
+            <span>Riverside</span>
+          </div>
+          <div class="tool-item">
+            <span class="tool-logo-frame"><img src="images/Adobe-logo.png" alt="" class="tool-logo" loading="lazy"></span>
+            <span>Adobe Creative Suite</span>
+          </div>
+          <div class="tool-item">
+            <span class="tool-logo-frame"><img src="https://cdn.simpleicons.org/jira" alt="" class="tool-logo" loading="lazy"></span>
+            <span>Jira</span>
+          </div>
+          <div class="tool-item">
+            <span class="tool-logo-frame"><img src="https://cdn.simpleicons.org/notion" alt="" class="tool-logo" loading="lazy"></span>
+            <span>Notion</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
 
 
-<!-- CONTACT -->
-<section class="panel contact" id="contact">
-  <div class="content contact-layout">
-
-    <!-- TEXT SIDE -->
-    <div class="contact-info">
-      <h2>Let’s build something together.</h2>
-
-      <p class="contact-text">
-        <strong>Email:</strong><br>
-        <a href="mailto:fabianabanegasrivero@gmail.com">fabianabanegasrivero@gmail.com</a><br>
-
-        <strong>LinkedIn:</strong><br>
-        <a href="https://www.linkedin.com/in/fabianabr" target="_blank" rel="noreferrer">
-          linkedin.com/in/fabianabr
+  <!-- CONTACT: full screen, no longer squeezed like a footer -->
+  <section class="contact-section" id="contact">
+    <div class="reveal">
+      <h2 class="section-title">Let's build <br> something together</h2> <br>
+      <div class="contact-links">
+        <a href="mailto:fabianabanegasrivero@gmail.com" class="contact-icon-btn" aria-label="Email fabianabanegasrivero@gmail.com">
+          <svg class="contact-icon" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+            <rect x="2" y="4" width="20" height="16" rx="2" stroke="var(--black-forest)" stroke-width="1.8"/>
+            <path d="M3 6.2 12 13 21 6.2" stroke="var(--black-forest)" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/>
+          </svg>
         </a>
-      </p>
-
-      <p class="hero-kicker">
-        Based in <strong>Dublin</strong> · originally from <strong>Bolivia</strong>
-      </p>
+        <a href="https://www.linkedin.com/in/fabianabr" target="_blank" rel="noreferrer" class="contact-icon-btn" aria-label="Fabiana Banegas on LinkedIn">
+          <img src="images/linkedin-icon.png" alt="" class="contact-icon contact-icon-linkedin">
+        </a>
+      </div>
     </div>
+  </section>
 
-    <!-- IMAGE SIDE -->
-    <div class="contact-image-wrapper">
-      <img src="images/email.png" alt="Portrait of Fabiana" class="contact-image">
-    </div>
-
+  <!-- FLOATING EXTRAS:  snake game -->
+  <div class="fab-dock">
+    <button class="fab-btn" id="fab-snake" aria-label="Open snake game" aria-haspopup="dialog">
+      <img src="images/snake-icon.png" alt="" class="fab-icon-img">
+    </button>
   </div>
-</section>
+
+  <div class="floating-window window" id="snake-window" role="dialog" aria-label="Snake game">
+    <div class="window-titlebar">
+      <button class="window-dot red" aria-label="Close"></button>
+      <span class="window-title">Childhood memories</span>
+    </div>
+    <div class="window-body snake-game">
+      <p class="snake-subtitle">Just for fun!</p>
+      <p class="snake-score">Score: <span id="snake-score">0</span></p>
+      <canvas id="snake-canvas" width="300" height="300"></canvas>
+      <p class="snake-hint">Arrow keys to move · F to start</p>
+    </div>
+  </div>
 
   <script src="script.js"></script>
 </body>

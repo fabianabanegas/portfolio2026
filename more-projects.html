@@ -2,176 +2,427 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8">
-  <title>More Projects – Fabiana Banegas</title>
+  <title>Exploring Other Areas – Fabiana Banegas</title>
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta name="description" content="Additional creative projects by Fabiana Banegas including video production, branding, podcast production and visual storytelling.">
+  <meta name="description" content="Additional creative work by Fabiana Banegas: video production, branding, podcast production, product photography, and marketing campaigns.">
+
+  <link rel="icon" href="images/favicon.ico">
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700;800;900&display=swap" rel="stylesheet">
+
   <link rel="stylesheet" href="style.css">
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js" onerror="document.documentElement.classList.add('no-js-fallback')"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/ScrollTrigger.min.js" onerror="document.documentElement.classList.add('no-js-fallback')"></script>
 </head>
 
-<body class="case-study-page">
+<body class="more-projects-page">
 
-  <!-- NAVBAR -->
+  <a href="#main-content" class="skip-link">Skip to content</a>
+
+  <!-- NAV -->
   <header class="top-nav">
     <div class="nav-left">
-      <a href="index.html" class="nav-home">← Let's go back</a>
+      <a href="index.html" class="nav-logo">FABIANA BANEGAS</a>
     </div>
-    <nav class="nav-right">
-      <a href="index.html#projects">Featured projects</a>
-      <a href="index.html">About</a>
+    <button class="nav-toggle" aria-label="Toggle navigation menu" aria-expanded="false" aria-controls="primary-nav">
+      <span></span><span></span><span></span>
+    </button>
+    <nav class="nav-right" id="primary-nav" aria-label="Main navigation">
+      <a href="index.html#featured">Featured work</a>
+      <a href="index.html#skills">Skills</a>
       <a href="index.html#contact">Contact</a>
+      <a href="index.html" class="nav-cta">← Back Home</a>
     </nav>
   </header>
 
-  <main class="case-study">
-
-    <!-- HERO -->
-    <section class="case-hero">
-      <div class="case-meta">
-        <p class="project-label">Multidisciplinary creativity</p>
-        <h1><strong>Exploring other Areas</strong></h1>
-              <p>
-        Alongside UX design and research, I have explored different creative disciplines that helped me develop <strong>storytelling</strong>, <strong>visual identity</strong>, and <strong>communication skills</strong> through diverse formats.
-      </p> <br>
-        <div class="case-stats">
-          <a href="#videoproduction">Video Production</a>
-          <a href="#branding">Branding</a>
-          <a href="#podcast">Podcast Production</a>
-          <a href="#photography">Product photography</a>
-          <a href="#marketing">Marketing campaigns</a>
-        </div>
-
+  <!-- PAGE INTRO -->
+  <section class="hero-section" id="top">
+    <div class="page-intro reveal">
+      <p class="hero-eyebrow">Multidisciplinary creativity</p> <br>
+      <h1 class="hero-name">Exploring other areas</h1> <br>
+      <p class="hero-desc">Alongside UX design and research, I've explored different creative disciplines that helped me develop storytelling, visual identity and communication through diverse formats.</p>
+      <br><div class="quick-links">
+        <a href="#videoproduction">Video production</a>
+        <a href="#marketing">Marketing campaigns</a>
+        <a href="#webdesign">Web design &amp; UX/UI</a>
+        <a href="#visualcommunication">Visual communication</a>
+        <a href="#branding">Branding</a>
+        <a href="#podcast">Podcast production</a>
+        <a href="#photography">Product photography</a>
       </div>
+    </div>
+  </section>
 
-    </section>
-
+  <main id="main-content">
 
     <!-- VIDEO PRODUCTION -->
-<section class="case-section" id="videoproduction">
-  <h2>Video Production</h2>
-  <p>
-    Short-form audiovisual projects focused on visual storytelling, editing rhythm, framing, and atmosphere.
-  </p>
-<br>
-  <h3>Night Shoot Santa Cruz, Downtown</h3>
-  <p>
-    Concept, shot planning, filming on Sony ZV-E10 II, and editing.
-  </p>
-    <p>
-    <strong>Creative challenge: </strong> capturing a traditional location in cinematographic style, at night with no natural light, emphasizing artificial glow, moody atmosphere, and dynamic movement.
-  </p>
+    <section class="folder-section" id="videoproduction">
+      <div class="section-heading-row">
+        <div>
+          <p class="file-label">
+            <svg class="folder-icon" viewBox="0 0 100 74" xmlns="http://www.w3.org/2000/svg" aria-hidden="true"><path d="M6 14C6 9.58 9.58 6 14 6H34L42 14H86C90.42 14 94 17.58 94 22V60C94 64.42 90.42 68 86 68H14C9.58 68 6 64.42 6 60V14Z"/></svg>
+          </p>
+          <h2 class="section-title">Video Production</h2>
+        </div>
+        <p class="section-subtitle">Short-form audiovisual projects focused on visual storytelling, editing rhythm, framing, and atmosphere.</p>
+      </div>
 
-  <div class="case-images">
-    <video controls>
-      <source src="videos/scz-video.mov" type="video/mp4">
-      Your browser does not support the video tag.
-    </video>
-  </div>
+      <div class="featured-list">
+        <article class="featured-row reveal">
+          <div class="featured-visual">
+            <div class="video-frame">
+              <video controls class="featured-video">
+                <source src="videos/scz-video.mov" type="video/mp4">
+                Your browser does not support the video tag.
+              </video>
+            </div>
+          </div>
+          <div class="featured-content">
+            <span class="tag-pill tag-purple">Concept · Filming · Editing</span>
+            <h3 class="project-title">Night Shoot - Santa Cruz, Downtown</h3>
+            <p class="project-desc">Concept, shot planning, filming on Sony ZV-E10 II, and editing.<br><br><strong>Creative challenge:</strong> capturing a traditional location in cinematographic style, at night with no natural light, emphasizing artificial glow, moody atmosphere, and dynamic movement.</p>
+          </div>
+        </article>
 
-    <br>
-  
-  <h3>Production – Café Buena Vista</h3>
-    <p>
-    <strong>“Start your day with properly made coffee”</strong> <br> Concept, shot planning, filming, editing, and sound design — all captured on iPhone to showcase a simple morning routine with focus on light, movement, and satisfying details.
+        <article class="featured-row featured-row-reverse reveal">
+          <div class="featured-visual">
+            <div class="video-frame portrait-video">
+              <video controls class="featured-video">
+                <source src="videos/cafe-buenavista.MP4" type="video/mp4">
+                Your browser does not support the video tag.
+              </video>
+            </div>
+          </div>
+          <div class="featured-content">
+            <span class="tag-pill tag-purple">Concept · Filming · Sound design</span>
+            <h3 class="project-title">Production - Café Buena Vista</h3>
+            <p class="project-desc"><strong>“Start your day with properly made coffee.”</strong> Concept, shot planning, filming, editing, and sound design. <br> All recorded on iPhone to showcase a simple morning routine with focus on light, movement, and satisfying details.</p>
+          </div>
+        </article>
 
-  <div class="case-images">
-    <video controls>
-      <source src="videos/cafe-buenavista.MP4" type="video/mp4">
-      Your browser does not support the video tag.
-    </video>
-  </div>
+        <article class="featured-row reveal">
+          <div class="featured-visual">
+            <div class="video-frame portrait-video">
+              <video controls class="featured-video">
+                <source src="videos/tutorial-marcia.mp4" type="video/mp4">
+                Your browser does not support the video tag.
+              </video>
+            </div>
+          </div>
+          <div class="featured-content">
+            <span class="tag-pill tag-purple">Concept · Filming · Editing</span>
+            <h3 class="project-title">Tutorial - Marcia Joyas</h3>
+            <p class="project-desc"><strong>“Measure your ring size from home”</strong> <br>Video tutorial created for a jewellery brand: concept, shot planning, filming, and editing, to deliver a quick, clear how-to guide and intuitive flow.</p>
+          </div>
+        </article>
+      </div>
+    </section>
 
-      <br>
-  
-  <h3>Tutorial – Marcia Joyas</h3>
-    <p>
-    <strong>“Measure your ring size with an app”</strong> <br> Created for a jewellery brand — concept, shot planning, filming, and editing, to deliver a quick, clear how-to guide and intuitive flow.
+        <!-- MARKETING -->
+    <section class="folder-section" id="marketing">
+      <div class="section-heading-row">
+        <div>
+          <p class="file-label">
+            <svg class="folder-icon" viewBox="0 0 100 74" xmlns="http://www.w3.org/2000/svg" aria-hidden="true"><path d="M6 14C6 9.58 9.58 6 14 6H34L42 14H86C90.42 14 94 17.58 94 22V60C94 64.42 90.42 68 86 68H14C9.58 68 6 64.42 6 60V14Z"/></svg>
+      
+          </p>
+          <h2 class="section-title">Marketing Campaigns <br> & Content Creation</h2>
+        </div>
+        <p class="section-subtitle">Campaign ideation and content built to engage audiences</p>
+      </div>
 
-  <div class="case-images">
-    <video controls>
-      <source src="videos/tutorial-marcia.mp4" type="video/mp4">
-      Your browser does not support the video tag.
-    </video>
-  </div>
+      <div class="featured-list">
+        <article class="featured-row featured-row-reverse reveal">
+          <div class="featured-visual">
+            <div class="gallery-grid">
+              <a href="images/marcia-marketing-2.jpg" class="expandable"><img src="images/marcia-marketing-2.jpg" alt="Marcia Joyas marketing campaign content 2" loading="lazy"></a>
+              <a href="images/marcia-marketing-3.jpg" class="expandable"><img src="images/marcia-marketing-3.jpg" alt="Marcia Joyas marketing campaign content 3" loading="lazy"></a>
+              <a href="images/marcia-marketing-4.jpg" class="expandable"><img src="images/marcia-marketing-4.jpg" alt="Marcia Joyas marketing campaign content 4" loading="lazy"></a>
+             
+              <a href="images/marcia-marketing-5.jpg" class="expandable"><img src="images/marcia-marketing-5.jpg" alt="Marcia Joyas marketing campaign content 5" loading="lazy"></a>
+              <a href="images/marcia-marketing-6.jpg" class="expandable"><img src="images/marcia-marketing-6.jpg" alt="Marcia Joyas marketing campaign content 6" loading="lazy"></a>
+              <a href="images/marcia-marketing-7.jpg" class="expandable"><img src="images/marcia-marketing-7.jpg" alt="Marcia Joyas marketing campaign content 7" loading="lazy"></a>
+              
+              <a href="images/marcia-marketing-8.jpg" class="expandable"><img src="images/marcia-marketing-8.jpg" alt="Marcia Joyas marketing campaign content 8" loading="lazy"></a>
+              <a href="images/marcia-marketing-9.jpg" class="expandable"><img src="images/marcia-marketing-9.jpg" alt="Marcia Joyas marketing campaign content 9" loading="lazy"></a>
+              <a href="images/marcia-marketing-10.jpg" class="expandable"><img src="images/marcia-marketing-10.jpg" alt="Marcia Joyas marketing campaign content 10" loading="lazy"></a>
+            </div>
+          </div>
+          <div class="featured-content">
+            <span class="tag-pill tag-amethyst">Marketing · Content · Social Media</span>
+            <h3 class="project-title">Marcia Joyas - Marketing Campaigns</h3>
+            <p class="project-desc">Developed ATL/BTL campaigns for Marcia Joyas, featuring emotional storytelling, custom visuals, and social media boosts to engage audiences and drive sales. Conversational, heartfelt style inspired by local cultural vibes, shared across social media.</p>
+            <p class="project-desc"><strong>Produced end-to-end:</strong> campaign ideation, Adobe Suite for digital and printed graphics, content calendars.</p>
+          </div>
+        </article>
 
-</section>
+        <article class="featured-row reveal">
+          <div class="featured-visual">
+            <div class="gallery-grid">
+              <a href="images/yaigo-green.jpg" class="expandable"><img src="images/yaigo-green.jpg" alt="Yaigo by Yummy campaign visual 1" loading="lazy"></a>
+              <a href="images/yaigo-green2.jpg" class="expandable"><img src="images/yaigo-green2.jpg" alt="Yaigo by Yummy campaign visual 2" loading="lazy"></a>
+              <a href="images/yaigo-green1.jpg" class="expandable"><img src="images/yaigo-green1.jpg" alt="Yaigo by Yummy campaign visual 2" loading="lazy"></a>
+              
+              <a href="images/yaigo-tickets.jpg" class="expandable"><img src="images/yaigo-tickets.jpg" alt="Yaigo by Yummy campaign visual 9" loading="lazy"></a>
+              <a href="images/yaigo-race.jpg" class="expandable"><img src="images/yaigo-race.jpg" alt="Yaigo by Yummy campaign visual 3" loading="lazy"></a>
+              <a href="images/yaigo-race1.jpg" class="expandable"><img src="images/yaigo-race1.jpg" alt="Yaigo by Yummy campaign visual 4" loading="lazy"></a>
+              
+              <a href="images/yaigo-awards.jpg" class="expandable"><img src="images/yaigo-awards.jpg" alt="Yaigo by Yummy campaign visual 7" loading="lazy"></a>
+              <a href="images/yaigo-appstore.jpg" class="expandable"><img src="images/yaigo-appstore.jpg" alt="Yaigo by Yummy campaign visual 5" loading="lazy"></a>
+              <a href="images/yaigo-add.jpg" class="expandable"><img src="images/yaigo-add.jpg" alt="Yaigo by Yummy campaign visual 8" loading="lazy"></a>
+
+            </div>
+          </div>
+          <div class="featured-content">
+            <span class="tag-pill tag-amethyst">Marketing · Content · Social Media</span>
+            <h3 class="project-title">Yaigo by Yummy - Marketing Coordinator</h3>
+            <p class="project-desc">Coordinated ATL/BTL marketing campaigns for a multi-category delivery app, working across clients from completely different industries, each with their own brand guidelines and tone to protect.
+            <p class="project-desc"><strong>Produced end-to-end:</strong> campaign concepts and briefs, sponsor pitching and partnerships, supplier coordination, social media content.</p>
+            <p class="project-desc">Among the most distinctive projects:</p>
+            <ul class="project-desc">
+              <li>Creation of an in-app section for donations to non-profit organisations, <strong>#YaigoGreen</strong></li>
+              <li>Brand activation sponsoring a local running race, securing sponsor partnerships across sports, retail, and wellness brands</li>
+              <li>Partnership with development institutions, offering accessible courses for entrepreneur-clients of the app, <strong>#YaigoAwards</strong></li>
+              <li>In-app ticketing section for events, identified as a gap in the market: partnered with event organisers and film releases, <strong>#YaigoTickets</strong></li>
+            </ul>
+
+          </div>
+        </article>
+      </div>
+    </section>
+
+    <!-- WEB DESIGN & UX/UI -->
+    <section class="folder-section" id="webdesign">
+      <div class="section-heading-row">
+        <div>
+          <p class="file-label">
+            <svg class="folder-icon" viewBox="0 0 100 74" xmlns="http://www.w3.org/2000/svg" aria-hidden="true"><path d="M6 14C6 9.58 9.58 6 14 6H34L42 14H86C90.42 14 94 17.58 94 22V60C94 64.42 90.42 68 86 68H14C9.58 68 6 64.42 6 60V14Z"/></svg>
+          </p>
+          <h2 class="section-title">Web Design & UX/UI</h2>
+        </div>
+        <p class="section-subtitle">Featured product and web design work: case studies and live sites.</p>
+      </div>
+
+      <div class="featured-list">
+        <article class="featured-row reveal">
+          <div class="featured-visual">
+            <a href="images/mygriff1.png" class="expandable"><img src="images/mygriff1.png" alt="MyGriff student dashboard interface" class="featured-cover" loading="lazy"></a>
+          </div>
+          <div class="featured-content">
+            <span class="tag-pill tag-amethyst">UX/UI · Learning platform</span>
+            <h3 class="project-title">MyGriff</h3>
+            <p class="project-desc">Redesigned Griffith College's platform into a unified Virtual Learning Environment with gamification and wellness integration.</p>
+            <div class="featured-links">
+              <a href="mygriff.html" class="project-cta">Case study →</a>
+              <a href="https://www.figma.com/proto/1njcJZNDhQxWBoXsY2BJaj/Interactive-Design-Project--Copy-?node-id=241-3222&t=wSFR3gdE6tpkI9Un-1&starting-point-node-id=241%3A3222" target="_blank" rel="noreferrer" class="project-cta outline">Try prototype →</a>
+            </div>
+          </div>
+        </article>
+
+        <article class="featured-row featured-row-reverse reveal">
+          <div class="featured-visual">
+            <a href="images/cholitas-site.png" class="expandable"><img src="images/cholitas-site.png" alt="Cholitas Escaladoras website homepage" class="featured-cover" loading="lazy"></a>
+          </div>
+          <div class="featured-content">
+            <span class="tag-pill tag-green">Web · Storytelling &amp; culture</span>
+            <h3 class="project-title">Cultural pride at the top of the world</h3>
+            <p class="project-desc">A hero website celebrating Bolivia's Cholita Climbers, Indigenous Aymara women who summit Andean giants in their traditional polleras and bowler hats.</p>
+            <div class="featured-links">
+              <a href="https://cholitasclimbers.netlify.app/" target="_blank" rel="noreferrer" class="project-cta">Visit site →</a>
+            </div>
+          </div>
+        </article>
+
+        <article class="featured-row reveal">
+          <div class="featured-visual">
+            <a href="images/camilaye-site.png" class="expandable"><img src="images/camilaye-site.png" alt="Cami Layé Okún artist website homepage" class="featured-cover" loading="lazy"></a>
+
+          </div>
+          <div class="featured-content">
+            <span class="tag-pill tag-purple">Web · Artist site</span>
+            <h3 class="project-title">Cami Layé Okún</h3>
+            <p class="project-desc">A hero portfolio site for a Cuban DJ and radio host, built with Astro on Netlify for near-instant load times.</p>
+            <div class="featured-links">
+              <a href="https://camilayeokun.netlify.app/" target="_blank" rel="noreferrer" class="project-cta">Visit site →</a>
+            </div>
+          </div>
+        </article>
+      </div>
+    </section>
+
+    <!-- VISUAL COMMUNICATION -->
+    <section class="folder-section" id="visualcommunication">
+      <div class="section-heading-row">
+        <div>
+          <p class="file-label">
+            <svg class="folder-icon" viewBox="0 0 100 74" xmlns="http://www.w3.org/2000/svg" aria-hidden="true"><path d="M6 14C6 9.58 9.58 6 14 6H34L42 14H86C90.42 14 94 17.58 94 22V60C94 64.42 90.42 68 86 68H14C9.58 68 6 64.42 6 60V14Z"/></svg>
+          </p>
+          <h2 class="section-title">Visual Communication</h2>
+        </div>
+        <p class="section-subtitle">Typography and composition posters from Visual Communication coursework.</p>
+      </div>
+
+      <div class="featured-list">
+        <article class="featured-row reveal">
+          <div class="featured-visual">
+            <a href="images/music-poster.png" class="expandable"><img src="images/music-poster.png" alt="Latin Jazz Festival poster" class="featured-cover a4-cover" loading="lazy"></a>
+          </div>
+          <div class="featured-content">
+            <span class="tag-pill tag-amethyst">Typography · Poster</span>
+            <h3 class="project-title">Latin Jazz Festival Poster</h3>
+            <p class="project-desc">Typography poster for the 50th Dublin Jazz Festival anniversary featuring Rubén Blades, exploring Latin Jazz vibrancy through type hierarchy, color systems, and visual rhythm.</p>
+            <div class="featured-links">
+              <a href="vicom1.html" class="project-cta">Case study →</a>
+            </div>
+          </div>
+        </article>
+
+        <article class="featured-row featured-row-reverse reveal">
+          <div class="featured-visual">
+            <a href="images/film-poster.png" class="expandable"><img src="images/film-poster.png" alt="Born on the Moon film poster" class="featured-cover a4-cover" loading="lazy"></a>
+          </div>
+          <div class="featured-content">
+            <span class="tag-pill tag-purple">Composition · Poster</span>
+            <h3 class="project-title">Born on the Moon</h3>
+            <p class="project-desc">Science fiction film poster following the emotional journey of the first human born on the Moon, discovering Earth, built with original photography and classic sci-fi hierarchy.</p>
+            <div class="featured-links">
+              <a href="vicom2.html" class="project-cta">Case study →</a>
+            </div>
+          </div>
+        </article>
+      </div>
+    </section>
 
     <!-- BRANDING -->
-    <section class="case-section" id="branding">
-      <h2>Branding</h2>
-      <p>
-    <strong>Marcia Joyas – Rebrand Journey</strong> </p>
-    <p>
-        Led the complete visual rebrand for this jewellery store — from concept and moodboarding to logo design, colour palette, typography guidelines, campaign assets, and mockups.Modernised the brand for younger audiences while keeping its joyful essence “Small details, big smiles”.
-      </p>
+    <section class="folder-section" id="branding">
+      <div class="section-heading-row">
+        <div>
+          <p class="file-label">
+            <svg class="folder-icon" viewBox="0 0 100 74" xmlns="http://www.w3.org/2000/svg" aria-hidden="true"><path d="M6 14C6 9.58 9.58 6 14 6H34L42 14H86C90.42 14 94 17.58 94 22V60C94 64.42 90.42 68 86 68H14C9.58 68 6 64.42 6 60V14Z"/></svg>
 
-      <div class="case-images">
-        <img src="images/branding1.png" alt="Branding example 1">
-     <!--  <img src="images/branding2.jpg" alt="Branding example 2"> --->
+          </p>
+          <h2 class="section-title">Branding</h2>
+        </div>
+        <p class="section-subtitle">Visual identity systems built from concept to final assets.</p>
+      </div>
+
+      <div class="featured-list">
+        <article class="featured-row reveal">
+          <div class="featured-visual">
+            <div class="gallery-grid">
+              <a href="images/branding1.png" class="expandable"><img src="images/branding1.png" alt="Marcia Joyas rebrand visual 1" loading="lazy"></a>
+              <a href="images/branding-2.jpg" class="expandable"><img src="images/branding-2.jpg" alt="Marcia Joyas rebrand visual 2" loading="lazy"></a>
+              <a href="images/branding-3.jpg" class="expandable"><img src="images/branding-3.jpg" alt="Marcia Joyas rebrand visual 3" loading="lazy"></a>
+              <a href="images/branding-4.jpg" class="expandable"><img src="images/branding-4.jpg" alt="Marcia Joyas rebrand visual 4" loading="lazy"></a>
+              <a href="images/branding-5.jpg" class="expandable"><img src="images/branding-5.jpg" alt="Marcia Joyas rebrand visual 5" loading="lazy"></a>
+              <a href="images/branding-6.jpg" class="expandable"><img src="images/branding-6.jpg" alt="Marcia Joyas rebrand visual 6" loading="lazy"></a>
+            </div>
+          </div>
+          <div class="featured-content">
+            <span class="tag-pill tag-purple">Brand identity · Rebrand</span>
+            <h3 class="project-title">Marcia Joyas - Rebrand Journey</h3>
+            <p class="project-desc">Led the complete visual rebrand for this jewellery store, from concept and moodboarding to logo design, colour palette, typography guidelines, campaign assets, and mockups. Modernised the brand for younger audiences while keeping its joyful essence: “Small details, big smiles.”</p>
+          </div>
+        </article>
+      </div>
+    </section>
+
+        <!-- PRODUCT PHOTOGRAPHY -->
+    <section class="folder-section" id="photography">
+      <div class="section-heading-row">
+        <div>
+          <p class="file-label">
+            <svg class="folder-icon" viewBox="0 0 100 74" xmlns="http://www.w3.org/2000/svg" aria-hidden="true"><path d="M6 14C6 9.58 9.58 6 14 6H34L42 14H86C90.42 14 94 17.58 94 22V60C94 64.42 90.42 68 86 68H14C9.58 68 6 64.42 6 60V14Z"/></svg>
+        
+          </p>
+          <h2 class="section-title">Product Photography</h2>
+        </div>
+        <p class="section-subtitle">Styling and shooting products with attention to light and detail.</p>
+      </div>
+
+      <div class="featured-list">
+        <article class="featured-row reveal">
+          <div class="featured-visual">
+            <div class="gallery-grid">
+              <a href="images/prod-ph1.jpg" class="expandable"><img src="images/prod-ph1.jpg" alt="Product photography example 1" loading="lazy"></a>
+              <a href="images/prod-ph2.jpg" class="expandable"><img src="images/prod-ph2.jpg" alt="Product photography example 2" loading="lazy"></a>
+              <a href="images/prod-ph3.jpg" class="expandable"><img src="images/prod-ph3.jpg" alt="Product photography example 3" loading="lazy"></a>
+              <a href="images/prod-ph4.jpg" class="expandable"><img src="images/prod-ph4.jpg" alt="Product photography example 4" loading="lazy"></a>
+              <a href="images/prod-ph5.jpg" class="expandable"><img src="images/prod-ph5.jpg" alt="Product photography example 5" loading="lazy"></a>
+              <a href="images/prod-ph6.jpg" class="expandable"><img src="images/prod-ph6.jpg" alt="Product photography example 6" loading="lazy"></a>
+              <a href="images/prod-ph7.jpg" class="expandable"><img src="images/prod-ph7.jpg" alt="Product photography example 7" loading="lazy"></a>
+              <a href="images/prod-ph8.jpg" class="expandable"><img src="images/prod-ph8.jpg" alt="Product photography example 8" loading="lazy"></a>
+              <a href="images/prod-ph9.jpg" class="expandable"><img src="images/prod-ph9.jpg" alt="Product photography example 9" loading="lazy"></a>
+              <a href="images/prod-ph10.jpg" class="expandable"><img src="images/prod-ph10.jpg" alt="Product photography example 10" loading="lazy"></a>
+              <a href="images/prod-ph11.jpg" class="expandable"><img src="images/prod-ph11.jpg" alt="Product photography example 11" loading="lazy"></a>
+              <a href="images/prod-ph12.jpg" class="expandable"><img src="images/prod-ph12.jpg" alt="Product photography example 12" loading="lazy"></a>
+            </div>
+          </div>
+          <div class="featured-content">
+            <span class="tag-pill tag-olive">Styling · Lighting · Editing</span>
+            <h3 class="project-title">Product shoots</h3>
+            <p class="project-desc">Planned and shot product photography with a focus on natural light, composition, and consistent styling, from setup to final retouch.</p>
+          </div>
+        </article>
       </div>
     </section>
 
     <!-- PODCAST -->
-    <section class="case-section" id="podcast">
-      <h2>Podcast Production</h2>
-  <h3>“Maybe Tomorrow” – Anti-Procrastination Podcast</h3>
-  <p>
-    Digital Media Production project for MSc in Interactive Digital Media.
-
-<br>Created a full podcast episode tackling procrastination — sharing struggles with perfectionism and fear of failure, plus practical tools like to-do lists and mindfulness practices.
-
-Conversational solo style inspired by Blindboy Podcast and Diego Dreyfus, hosted on Spotify with original artwork and Pixabay lo-fi jazz/SFX.​
-  </p>
-    <p>
-    <strong> Produced end-to-end: </strong> show notes, Riverside.fm for recording/editing, Focusrite Scarlett 2i2 studio mic, and research from “Get Things Done” by Mikael Krogerus.
-   
-      <div class="case-images">
-        <img src="images/podcast1.png" alt="Podcast production example 1">
-      </div>
-    </section>
-
-        <!-- product photography -->
-    <section class="case-section" id="photography">
-      <h2>Product photography</h2>
-
-      <div class="case-images">
-        <img src="images/product-photo.png" alt="Podcast production example 1">
-      </div>
-    </section>
-
-        <!-- Marketing campaigns -->
-    <section class="case-section" id="marketing">
-      <h2>Marketing campaigns & Content creation</h2>
-  <p>
- Developed ATL/BTL campaigns like for Marcia Joyas, festive promotions—featuring emotional storytelling, custom visuals, and social media boosts to engage audiences and drive sales. <br> Conversational, heartfelt style inspired by local cultural vibes, shared across social media.
-  </p>
-    <p>
-    <strong> Produced end-to-end: </strong> campaigns ideation, Adobe Suite for digital and printed graphics, content calendars.
-   
-      <div class="case-images">
-        <img src="images/marketing-content.png" alt="Podcast production example 1">
-      </div>
-    </section>
-
-
-    <!-- CTA -->
-    <section class="case-cta">
-
-         <div class="case-stats">
-          <a href="#videoproduction">Video Production</a>
-          <a href="#branding">Branding</a>
-          <a href="#podcast">Podcast Production</a>
-          <a href="#photography">Product photography</a>
-          <a href="#marketing">Marketing campaigns</a>
+    <section class="folder-section" id="podcast">
+      <div class="section-heading-row">
+        <div>
+          <p class="file-label">
+            <svg class="folder-icon" viewBox="0 0 100 74" xmlns="http://www.w3.org/2000/svg" aria-hidden="true"><path d="M6 14C6 9.58 9.58 6 14 6H34L42 14H86C90.42 14 94 17.58 94 22V60C94 64.42 90.42 68 86 68H14C9.58 68 6 64.42 6 60V14Z"/></svg>
+          
+          </p>
+          <h2 class="section-title">Podcast Production</h2>
         </div>
-        <br>
+        <p class="section-subtitle">Digital Media Production project for MSc in Interactive Digital Media.</p>
+      </div>
 
-      <div class="cta-content">
-        <a href="index.html#projects" class="cta-back">← UX projects</a>
-        <a href="index.html#contact" class="cta-prototype">Contact →</a>
+      <div class="featured-list">
+        <article class="featured-row featured-row-reverse reveal">
+          <div class="featured-visual">
+            <div class="podcast-visual-row">
+              <a href="images/podcast1.png" class="expandable podcast-cover-link"><img src="images/podcast1.png" alt="Maybe Tomorrow podcast cover artwork" class="featured-cover square-cover" loading="lazy"></a>
+              <a href="images/podcast2.png" class="expandable podcast-vertical-link"><img src="images/podcast2.png" alt="Maybe Tomorrow podcast episode on Spotify" class="featured-highlight-img portrait-highlight" loading="lazy"></a>
+            </div>
+          </div>
+          <div class="featured-content">
+            <span class="tag-pill tag-green">Audio production · Concept ideation</span>
+            <h3 class="project-title">"Maybe Tomorrow" - Anti-Procrastination Podcast</h3>
+            <p class="project-desc">Production of a conversational solo podcast, hosted on Spotify with original artwork and Pixabay lo-fi jazz/SFX.</p>
+            <p class="project-desc"><strong>Produced end-to-end:</strong> show notes, Riverside.fm for recording/editing, Focusrite Scarlett 2i2 studio mic, and research from “Get Things Done” by Mikael Krogerus.</p>
+          </div>
+        </article>
       </div>
     </section>
+
+
 
   </main>
 
+  <!-- CTA -->
+  <section class="contact-section" id="contact">
+    <div class="reveal">
+      <h2 class="section-title">Like what you see?</h2> <br>
+      <p class="section-subtitle">Take a look at the featured UX/UI work, or get in touch.</p>
+      <div class="contact-links">
+        <a href="index.html#featured">← Featured projects</a>
+        <a href="mailto:fabianabanegasrivero@gmail.com">Get in touch →</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- LIGHTBOX: opens gallery-grid images full size -->
+  <div class="lightbox" id="lightbox" role="dialog" aria-modal="true" aria-label="Image preview">
+    <button class="lightbox-close" id="lightbox-close" aria-label="Close image preview">&times;</button>
+    <img src="" alt="" class="lightbox-img" id="lightbox-img">
+  </div>
+
+  <script src="script.js"></script>
 </body>
 </html>

@@ -4,101 +4,177 @@
   <meta charset="UTF-8">
   <title>MyGriff – Fabiana Banegas</title>
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta name="description" content="MyGriff: Redesigned Griffith College Moodle into unified student dashboard with productivity tools, gamification, and wellness features.">
-  <link rel="stylesheet" href="style.css">
-</head>
-<body class="case-study-page">
+  <meta name="description" content="MyGriff: Redesigned Griffith College Moodle into a unified student dashboard with productivity tools, gamification, and wellness features.">
 
-  <!-- NAVBAR -->
+  <link rel="icon" href="images/favicon.ico">
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700;800;900&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="style.css">
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js" onerror="document.documentElement.classList.add('no-js-fallback')"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/ScrollTrigger.min.js" onerror="document.documentElement.classList.add('no-js-fallback')"></script>
+</head>
+
+<body>
+
+  <a href="#main-content" class="skip-link">Skip to content</a>
+
+  <!-- NAV -->
   <header class="top-nav">
     <div class="nav-left">
-      <a href="index.html" class="nav-home">← Let's go back</a>
+      <a href="index.html" class="nav-logo">FABIANA BANEGAS</a>
     </div>
-    <nav class="nav-right">
-      <a href="index.html#projects">Featured projects</a>
-            <a href="index.html">About</a>
+    <button class="nav-toggle" aria-label="Toggle navigation menu" aria-expanded="false" aria-controls="primary-nav">
+      <span></span><span></span><span></span>
+    </button>
+    <nav class="nav-right" id="primary-nav" aria-label="Main navigation">
+      <a href="index.html#featured">Featured work</a>
+      <a href="index.html#skills">Skills</a>
       <a href="index.html#contact">Contact</a>
-        <a href="more-projects.html" class="nav-cta">Explore other areas →</a>
+      <a href="index.html" class="nav-cta">← Back to portfolio</a>
     </nav>
   </header>
 
-  <main class="case-study">
-    <section class="case-hero">
-      <div class="case-meta">
-        <p class="project-label">UX/UI · Learning Platform · 2025</p>
-      <h1><strong>MyGriff</strong> </h1>
-      <h3> Student Learning & Productivity App</h3>
-        <div class="case-stats">
-          <span>Team project</span>
-          <span>My Role: Research + Information Architecture</span>
-          <span>Figma prototype </span>
+  <!-- CASE STUDY HERO -->
+  <section class="hero-section" id="top">
+    <div class="page-intro reveal">
+      <p class="hero-eyebrow">UX/UI · Learning Platform · 2025</p>
+      <h1 class="hero-name">MyGriff</h1>
+      <p class="hero-desc">Student Learning &amp; Productivity App: redesigning Griffith College's Moodle into a unified dashboard with gamification and wellness integration.</p>
+      <div class="case-stats">
+        <span class="tag-pill">Team project</span>
+        <span class="tag-pill">Role: Research + Information Architecture</span>
+        <span class="tag-pill">Figma prototype</span>
+      </div>
+      <a href="images/mygriff1.png" class="expandable case-hero-image"><img src="images/mygriff1.png" alt="MyGriff student dashboard interface" class="featured-cover" loading="lazy"></a>
+    </div>
+  </section>
+
+  <main id="main-content">
+
+    <!-- PROBLEM -->
+    <section class="folder-section" id="problem">
+      <div class="section-heading-row">
+        <div>
+          <p class="file-label">
+            <svg class="folder-icon" viewBox="0 0 100 74" xmlns="http://www.w3.org/2000/svg" aria-hidden="true"><path d="M6 14C6 9.58 9.58 6 14 6H34L42 14H86C90.42 14 94 17.58 94 22V60C94 64.42 90.42 68 86 68H14C9.58 68 6 64.42 6 60V14Z"/></svg>
+            problem
+          </p>
+          <h2 class="section-title">The problem</h2>
         </div>
       </div>
+      <div class="case-copy">
+        <p>Scattered navigation: courses, timetables, grades, and support living in silos, plus poor feedback, inconsistent UI, and a lack of productivity tools created stress for busy postgrads like our user persona "Alex" (28, full-time MSc, balancing work and studies).</p>
+      </div>
+    </section>
 
-        <div class="case-images">
-        <img src="images/mygriff1.png" alt="Dashboard">
+    <!-- RESEARCH -->
+    <section class="folder-section" id="research">
+      <div class="section-heading-row">
+        <div>
+          <p class="file-label">
+            <svg class="folder-icon" viewBox="0 0 100 74" xmlns="http://www.w3.org/2000/svg" aria-hidden="true"><path d="M6 14C6 9.58 9.58 6 14 6H34L42 14H86C90.42 14 94 17.58 94 22V60C94 64.42 90.42 68 86 68H14C9.58 68 6 64.42 6 60V14Z"/></svg>
+            research
+          </p>
+          <h2 class="section-title">Competitor analysis</h2>
         </div>
-    </section>
-
-    <section class="case-section">
-      <h2>Problem</h2>
-      <p>
-      Scattered navigation: courses/timetables/grades/support in silos, poor feedback, inconsistent UI and the lack of productivity tools created stress for busy postgrads like our user persona "Alex" (28, full-time MSc, balancing work/studies).
-      </p>
-    </section>
-
-    <section class="case-section">
-      <h2>My Research: Competitor Analysis</h2>
-      <p>
-        Analyzed 6 platforms to identify edtech trends 2025.
-        </p>
-        <p>
-        <strong>Canvas LMS:</strong> Custom dashboards, Zoom integration<br>
-        <strong>Duolingo:</strong> Gamification (badges, progress paths)<br>
-        <strong>Google Classroom:</strong> Icon grids, task breadcrumbs<br>
-        <strong>LinkedIn Learning:</strong> Career journey tracking<br>
-        <strong>Jira:</strong> Quick Start guides, notification filters<br>
-      </p>
-    </section>
-
-    <section class="case-section">
-      <h2>Key Market Trends I Identified</h2>
-      <ul>
-        <li><strong>Goal-directed design</strong>: "What's due today" first, To do lists </li>
-        <li><strong>Gamification</strong>: Progress rings + badges boost retention 40%</li>
-        <li><strong>Personalization</strong>: Custom dashboards reduce cognitive load</li>
-        <li><strong>Wellness integration</strong>: Pomodoro/Lo-fi = 25% more focus time</li>
-      </ul>
-    </section>
-
-    <section class="case-section">
-      <h2>Solution: Integrating Features</h2>
-      <p>
-        Fixed sidebar (Courses/Calendar/Attendance) <strong> → Jira consistency </strong> <br>
-        Progress rings + trophies <strong> →  Duolingo motivation </strong>  <br>
-        Quick Start + timeline <strong> →  LinkedIn career paths </strong>  <br>
-        Pomodoro/Lo-fi wellness <strong> →   Modern productivity apps </strong> <br>
-        Responsive dark mode <strong> →   2025 accessibility standards </strong> 
-        </p>
-    </section>
-
-    <section class="case-section">
-      <h2>Key Screens</h2>
-      <div class="case-images">
-        <img src="images/mygriff-dashboard.png" alt="Dashboard">
-        <img src="images/mygriff-profile.png" alt="profile">
-        <img src="images/style-guide.png" alt="style guide">
+      </div>
+      <div class="case-copy">
+        <p>Analyzed different platforms to identify edtech trends for 2025, among them:</p>
+        <ul>
+          <li><strong>Canvas LMS:</strong> Custom dashboards, Zoom integration</li>
+          <li><strong>Duolingo:</strong> Gamification (badges, progress paths)</li>
+          <li><strong>Google Classroom:</strong> Icon grids, task breadcrumbs</li>
+          <li><strong>LinkedIn Learning:</strong> Career journey tracking</li>
+          <li><strong>Jira:</strong> Quick Start guides, notification filters</li>
+        </ul>
       </div>
     </section>
 
-    <section class="case-cta">
-      <div class="cta-content">
-                <a href="index.html#projects" class="cta-back">← Lets go back</a>
-        <a href="https://www.figma.com/proto/1njcJZNDhQxWBoXsY2BJaj/Interactive-Design-Project--Copy-?node-id=241-3222&t=wSFR3gdE6tpkI9Un-1&starting-point-node-id=241%3A3222" 
-           target="_blank" class="cta-prototype">Try interactive prototype →</a>
+    <!-- KEY MARKET TRENDS -->
+    <section class="folder-section" id="trends">
+      <div class="section-heading-row">
+        <div>
+          <p class="file-label">
+            <svg class="folder-icon" viewBox="0 0 100 74" xmlns="http://www.w3.org/2000/svg" aria-hidden="true"><path d="M6 14C6 9.58 9.58 6 14 6H34L42 14H86C90.42 14 94 17.58 94 22V60C94 64.42 90.42 68 86 68H14C9.58 68 6 64.42 6 60V14Z"/></svg>
+            findings
+          </p>
+          <h2 class="section-title">Key market trends I identified</h2>
+        </div>
+      </div>
+      <div class="case-copy">
+        <ul>
+          <li><strong>Goal-directed design:</strong> "What's due today" first, to-do lists</li>
+          <li><strong>Gamification:</strong> Progress rings + badges boost retention 40%</li>
+          <li><strong>Personalization:</strong> Custom dashboards reduce cognitive load</li>
+          <li><strong>Wellness integration:</strong> Pomodoro / lo-fi = 25% more focus time</li>
+        </ul>
       </div>
     </section>
+
+    <!-- SOLUTION -->
+    <section class="folder-section" id="solution">
+      <div class="section-heading-row">
+        <div>
+          <p class="file-label">
+            <svg class="folder-icon" viewBox="0 0 100 74" xmlns="http://www.w3.org/2000/svg" aria-hidden="true"><path d="M6 14C6 9.58 9.58 6 14 6H34L42 14H86C90.42 14 94 17.58 94 22V60C94 64.42 90.42 68 86 68H14C9.58 68 6 64.42 6 60V14Z"/></svg>
+            solution
+          </p>
+          <h2 class="section-title">Integrating features</h2>
+        </div>
+      </div>
+      <div class="case-copy">
+        <ul>
+          <li>Fixed sidebar (Courses / Calendar / Attendance) <strong>→ Jira consistency</strong></li>
+          <li>Progress rings + trophies <strong>→ Duolingo motivation</strong></li>
+          <li>Quick Start + timeline <strong>→ LinkedIn career paths</strong></li>
+          <li>Pomodoro / lo-fi wellness <strong>→ modern productivity apps</strong></li>
+          <li>Responsive dark mode <strong>→ 2025 accessibility standards</strong></li>
+        </ul>
+      </div>
+    </section>
+
+    <!-- KEY SCREENS -->
+    <section class="folder-section" id="screens">
+      <div class="section-heading-row">
+        <div>
+          <p class="file-label">
+            <svg class="folder-icon" viewBox="0 0 100 74" xmlns="http://www.w3.org/2000/svg" aria-hidden="true"><path d="M6 14C6 9.58 9.58 6 14 6H34L42 14H86C90.42 14 94 17.58 94 22V60C94 64.42 90.42 68 86 68H14C9.58 68 6 64.42 6 60V14Z"/></svg>
+            key screens
+          </p>
+          <h2 class="section-title">Key screens</h2>
+        </div>
+      </div>
+      <div class="gallery-grid gallery-grid-wide">
+        <a href="images/mygriff-dashboard.png" class="expandable"><img src="images/mygriff-dashboard.png" alt="MyGriff dashboard screen" loading="lazy"></a>
+        <a href="images/mygriff-profile.png" class="expandable"><img src="images/mygriff-profile.png" alt="MyGriff profile screen" loading="lazy"></a>
+        <a href="images/style-guide.png" class="expandable"><img src="images/style-guide.png" alt="MyGriff style guide" loading="lazy"></a>
+      </div>
+    </section>
+
   </main>
 
+  <!-- CTA -->
+  <section class="contact-section" id="contact">
+    <div class="reveal">
+      <h2 class="section-title">Like what you see?</h2> <br>
+      <p class="section-subtitle">Try the interactive prototype or head back to explore more work.</p>
+      <div class="contact-links">
+        <a href="index.html#featured">← Featured projects</a>
+        <a href="https://www.figma.com/proto/1njcJZNDhQxWBoXsY2BJaj/Interactive-Design-Project--Copy-?node-id=241-3222&t=wSFR3gdE6tpkI9Un-1&starting-point-node-id=241%3A3222" target="_blank" rel="noreferrer">Try prototype →</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- LIGHTBOX -->
+  <div class="lightbox" id="lightbox" role="dialog" aria-modal="true" aria-label="Image preview">
+    <button class="lightbox-close" id="lightbox-close" aria-label="Close image preview">&times;</button>
+    <img src="" alt="" class="lightbox-img" id="lightbox-img">
+  </div>
+
+  <script src="script.js"></script>
 </body>
 </html>
