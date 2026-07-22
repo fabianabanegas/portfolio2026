@@ -1,0 +1,9 @@
+{
+  "name": "fabiana-banegas-portfolio",
+  "version": "1.0.0",
+  "private": true,
+  "description": "Fabiana Banegas' portfolio site (static HTML/CSS/JS, no build step).",
+  "scripts": {
+    "dev": "python3 -m http.server 5173"
+  }
+}
